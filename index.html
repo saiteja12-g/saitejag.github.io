@@ -617,29 +617,29 @@
                   <p>The goal of this project is to Create an image panorama by stitching a set of images together</p>                           
                   <h5>Image Registration</h5>
                   <p>I used SURF to do the feature point extraction and matching, then used random sample consensus(RANSAC) for transform matrix estimation</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/image_mosaic/SURFMatches.jpg" alt="">
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/Image_mosaic/SURFMatches.jpg" alt="">
                   <h5>Image Warping</h5>
                   <p>Use the derived transform matrix nad project that warped image on a plain surface</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/image_mosaic/img1.jpg" alt="">
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/Image_mosaic/img1.jpg" alt="">
                   <img class="img-fluid d-block mx-auto" src="img/portfolio/image_mosaic/img2.jpg" alt="">
                   <h5>Image Blending</h5>
                   <p>Using Center-Weighting algorithm (compute the the distance from each pixel to 4 boundaries of the image and take the the smallest ratio                   
                     between two distances and the dimension of image as the corresponding pixel
                     value on mask matrix). The mask we derived is shown in the following image:</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/image_mosaic/mask.jpg" alt="">
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/Image_mosaic/mask.jpg" alt="">
                   <p>For each image, I derive a mask and then warp the mask just as warp the image</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/image_mosaic/before.jpg" alt="">
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/image_mosaic/after.jpg" alt="">
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/Image_mosaic/before.jpg" alt="">
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/Image_mosaic/after.jpg" alt="">
                   <h5>Cropping</h5>
                   <p>After doing image stitching and image blending, I get the panorama look as following</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/image_mosaic/1.jpg" alt="">
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/image_mosaic/2.jpg" alt="">
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/image_mosaic/3.jpg" alt="">
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/Image_mosaic/1.jpg" alt="">
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/Image_mosaic/2.jpg" alt="">
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/Image_mosaic/3.jpg" alt="">
                   <p>Use pythong to find the largest rectangle that don’t include the black region in the
                     panorama image, I get the final panorama look as following</p>
-                    <img class="img-fluid d-block mx-auto" src="img/portfolio/image_mosaic/1_a.jpg" alt="">
-                    <img class="img-fluid d-block mx-auto" src="img/portfolio/image_mosaic/2_a.jpg" alt="">
-                    <img class="img-fluid d-block mx-auto" src="img/portfolio/image_mosaic/3_a.jpg" alt="">
+                    <img class="img-fluid d-block mx-auto" src="img/portfolio/Image_mosaic/1_a.jpg" alt="">
+                    <img class="img-fluid d-block mx-auto" src="img/portfolio/Image_mosaic/2_a.jpg" alt="">
+                    <img class="img-fluid d-block mx-auto" src="img/portfolio/Image_mosaic/3_a.jpg" alt="">
                   <ul class="list-inline">
                   <!-- <p><a class="boxed" href="https://drive.google.com/file/d/1p8h66kcTu3J3DAQ-OETgzaHgj101Kw8o/view?usp=sharing"><font color="red"><b>Report</font></a></p> -->
                   </ul>
