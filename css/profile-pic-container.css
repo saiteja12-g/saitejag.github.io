@@ -1,0 +1,19 @@
+/* Add CSS to style the image container */
+.profile-pic-container {
+    width: 200px; /* or the size you want */
+    height: 200px; /* must be the same as width for a perfect circle */
+    border-radius: 50%; /* this makes it circular */
+    overflow: hidden; /* this ensures that the image does not break the circle */
+    display: flex; /* enables flexbox for centering */
+    align-items: center; /* vertical centering */
+    justify-content: center; /* horizontal centering */
+}
+
+/* Add CSS to ensure the image fits nicely */
+.profile-pic {
+width: 100%; /* set width to 100% of the container */
+height: 100%; /* set height to 100% of the container */
+object-fit: cover; /* this will cover the area without stretching */
+border-radius: 50%; /* optional: if the container is not round, this will ensure the image itself is also round */
+object-position: center top;
+}
